@@ -149,19 +149,14 @@ body {
   line-height: 1.6;
 }
 
-/* ✅ 전송 버튼 - 내부 letter-wrapper 기준 위치 */
 .svg-button-wrapper {
   position: absolute;
-  top: 100px;
-  right: -80px;
+  top: -76px;
+  left: calc(213px + 886px - 129px);
   width: 129px;
   height: 81px;
-  background-color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 110;
   cursor: pointer;
+  z-index: 110;
 }
 
 .svg-button-wrapper svg {
@@ -171,8 +166,8 @@ body {
 
 .svg-button-text {
   position: absolute;
-  top: 15px;
-  left: 24px;
+  top: 25px;
+  left: 33px;
   font-size: 40px;
   font-weight: 700;
   font-family: Helvetica, sans-serif;

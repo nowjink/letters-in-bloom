@@ -64,7 +64,8 @@ function createFlower(entry) {
 
   let left = Math.random() * (window.innerWidth - 320);
   if (left < 650) left = 650;
-  const top = Math.random() * (window.innerHeight - 200);
+  const top = Math.random() * (window.innerHeight - 300);
+
   flower.style.left = `${left}px`;
   flower.style.top = `${top}px`;
 
@@ -77,7 +78,6 @@ function createFlower(entry) {
     hideMainUI();
   });
 
-  // 💡 발신인 이름 표시
   const name = document.createElement('div');
   name.className = 'sender-name';
   name.textContent = entry.sender || '익명';
