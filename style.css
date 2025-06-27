@@ -151,7 +151,7 @@ body {
 
 .svg-button-wrapper {
   position: absolute;
-  top: -76px;
+  top: 20px; /* ✅ 음수 말고 양수! */
   left: calc(213px + 886px - 129px);
   width: 129px;
   height: 81px;
