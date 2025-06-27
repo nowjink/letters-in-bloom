@@ -152,7 +152,7 @@ body {
 /* ✅ 전송 버튼 - 내부 letter-wrapper 기준 위치 */
 .svg-button-wrapper {
   position: absolute;
-  top: 180px;
+  top: 100px;
   right: -80px;
   width: 129px;
   height: 81px;
