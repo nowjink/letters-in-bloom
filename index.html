@@ -7,11 +7,12 @@
   <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-  <!-- 안내서 -->
-  <img src="./images/info.png" id="infoIcon" />
 
-  <!-- 물뿌리개 버튼 -->
-  <img src="./images/wateringcan.png" class="watering-can" />
+  <!-- 안내서 -->
+  <img src="./images/info.png" id="infoIcon" alt="info guide" />
+
+  <!-- 물뿌리개 -->
+  <img src="./images/wateringcan.png" class="watering-can" alt="watering can" />
 
   <!-- 꽃들 -->
   <div class="flower-container"></div>
@@ -19,35 +20,56 @@
   <!-- 편지 작성 모달 -->
   <div id="letterModal" class="modal hidden">
     <div class="letter-wrapper">
+
+      <!-- 수신인 -->
       <div id="receiverInputWrapper" class="input-wrapper">
-        <input type="text" id="receiverInput" placeholder="받는 사람" />
+        <input type="text" id="receiverInput" placeholder="To" />
         <div class="underline"></div>
       </div>
 
+      <!-- 발신인 -->
       <div id="senderInputWrapper" class="input-wrapper">
-        <input type="text" id="senderInput" placeholder="보낸 사람" />
+        <input type="text" id="senderInput" placeholder="From" />
         <div class="underline"></div>
       </div>
 
+      <!-- 본문 -->
       <textarea id="letterInput" placeholder="편지를 써주세요..."></textarea>
-      <button id="submitLetter" class="send-button">send</button>
-      <img class="home-button" src="./images/shovel.png" />
+
+      <!-- ✅ 전송 버튼 -->
+      <div class="svg-button-wrapper" id="submitLetter">
+        <svg xmlns="http://www.w3.org/2000/svg" width="135" height="87" viewBox="0 0 135 87" fill="none">
+          <path d="M67.5 1.5C85.5 1.5 102 6 114 13.6C126 21.1 133.5 31.6 133.5 43.5C133.5 55.4 126 65.9 114 73.4C102 80.9 85.5 85.5 67.5 85.5C49.5 85.5 33 80.9 21.1 73.4C9.2 65.9 1.5 55.4 1.5 43.5C1.5 31.6 9.2 21.1 21.1 13.6C33 6 49.5 1.5 67.5 1.5Z"
+            fill="white" stroke="black" stroke-width="3" />
+        </svg>
+        <span class="svg-button-text">send</span>
+      </div>
+
+      <!-- 삽 버튼 -->
+      <img class="home-button" src="./images/shovel.png" alt="home" />
+
     </div>
   </div>
 
   <!-- 편지 열람 모달 -->
   <div id="viewModal" class="modal hidden">
     <div class="read-wrapper">
+
+      <!-- 수신인 라벨 -->
       <div id="receiverLabel" class="input-wrapper">
         <div class="underline"></div>
       </div>
 
+      <!-- 발신인 라벨 -->
       <div id="senderLabel" class="input-wrapper">
         <div class="underline"></div>
       </div>
 
+      <!-- 본문 내용 -->
       <div id="viewContent"></div>
-      <img class="home-button" src="./images/shovel.png" />
+
+      <!-- 삽 버튼 -->
+      <img class="home-button" src="./images/shovel.png" alt="home" />
     </div>
   </div>
 
