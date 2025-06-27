@@ -151,8 +151,8 @@ body {
 
 .svg-button-wrapper {
   position: absolute;
-  top: 120px; /* ✅ 음수 말고 양수! */
-  left: calc(213px + 886px - 129px);
+  top: 200px; /* ✅ 음수 말고 양수! */
+  left: calc(213px + 886px - 300px);
   width: 129px;
   height: 81px;
   cursor: pointer;
@@ -166,8 +166,8 @@ body {
 
 .svg-button-text {
   position: absolute;
-  top: 120px;
-  left: 33px;
+  top: 18px;
+  left: 22px;
   font-size: 40px;
   font-weight: 700;
   font-family: Helvetica, sans-serif;
